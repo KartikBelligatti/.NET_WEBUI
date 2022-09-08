@@ -1,0 +1,168 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<style>  
+body{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+  margin-left: 600px;
+  margin-right: 600px;
+  background-image: url(assets/bg.jpg);
+}  
+
+.container label{
+    font-size: large;
+   
+}
+.container {  
+    padding: 50px;  
+  background-color: rgb(133, 186, 204);  
+  border-radius: 20px;
+  
+}  
+  
+input[type=text], input[type=password], textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px -12px;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1; 
+  border-radius: 20px; 
+  
+}  
+input[type=text]:focus, input[type=password]:focus {  
+  background-color: rgb(240, 245, 243);  
+  outline: none;  
+  
+}  
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: rgb(18, 10, 10);  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+  border-radius: 20px;
+    background-color: #da85bb;
+    font-size: large;
+}  
+.registerbtn:hover {  
+  background-color: #4CAF50;  
+} 
+
+select{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+ 
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+ 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 40px;
+      margin-bottom: -900px;
+      margin-top: 0px;
+      margin-left: 60px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+</style>  
+</head>  
+<body>  
+<form>  
+  <div class="container">  
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter">Registeration Form</h3>
+          </div>
+        </div>
+      </div>
+
+  <center>  <h1> </h1> </center>  
+  <hr>  
+  <label > <b>Firstname</b> </label>   
+<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
+<label> <b>Middlename:</b> </label>   
+<input type="text" name="middlename" placeholder="Middlename" size="15" required />   
+<label> <b>Lastname:</b> </label>    
+<input type="text" name="lastname" placeholder="Lastname" size="15"required />   
+<div>  
+<label>   
+<!-- Course :   -->
+</label>   
+  
+<select>  
+<option value="C">C</option>  
+<option value="C#">C#</option>  
+<option value="Java">Java</option>  
+<option value="python">python</option>  
+<option value="C++">C++</option>  
+<option value="Android">Android</option>  
+<option value="Flutter">Flutter</option>  
+</select>  
+</div>  
+<div>  
+<label>   
+<!-- Gender :   -->
+</label><br>  
+<input class="radio" type="radio" value="Male" name="gender" checked ><b> Male </b>  
+<input type="radio" value="Female" name="gender"><b> Female </b>  
+<input type="radio" value="Other" name="gender"><b> Other </b>  
+  
+</div>  
+<label>   
+<!-- //Phone :   -->
+</label>  
+<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
+<input type="text" name="phone" placeholder="phone no." size="10"/ required>   
+<!-- Current Address :   -->
+<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
+</textarea>  
+ <label for="email"><b>Email</b></label>  
+ <input type="text" placeholder="Enter Email" name="email" required>  
+  
+    <label for="psw"><b>Password</b></label>  
+    <input type="password" placeholder="Enter Password" name="psw" required>  
+  
+    <label for="psw-repeat"><b>Re-type Password</b></label>  
+    <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
+    <button type="submit" class="registerbtn">Register</button>    
+</form>  
+</body>  
+</html>  

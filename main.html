@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<style>
+
+    body { 
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .header {
+      overflow: hidden;
+      background-color: #102d23;
+      padding: 20px 10px;
+     
+    }
+    
+    .header a {
+      float: left;
+      color: #f9f5f5;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 18px; 
+      line-height: 25px;
+      border-radius: 4px;
+      
+    }
+    
+    .header a.head {
+      font-size: 25px;
+      font-weight: bold;
+      color: aliceblue;
+      margin-left: 300px;
+      font-size: 40px ;
+    }
+    
+    .header a:hover {
+      background-color: rgb(27, 208, 136);
+      color: black;
+    }
+    .head{
+      background-color: rgb(27, 208, 136);
+      color: black;
+      width: 200px;
+    }
+  
+    .head{
+      animation-name: hh;
+    }
+    
+    .header a.active {
+      background-color: rgb(27, 208, 136);
+      color: white;
+    }
+    
+    .header-right{
+        margin-left: 1200px;
+    }
+
+
+    .right{
+        width: 20%;
+        height: 600px;
+        float: left;
+        background-color: #102d23;
+        margin-top: 10PX;
+        border-radius: 20PX;
+        border:3px solid #0ff74d;
+        margin-left: 8px;
+    }
+    .center{
+        width: 57.5%;
+        height: 600px;
+        float: left;
+        background-color: #102d23;
+        margin-top: 10PX;
+        border-radius: 20PX;
+        border:3px solid #0ff74d;
+        margin-left: 8px;
+    }
+    .left{
+        width: 20%;
+        height: 600px;
+        float: left;
+        background-color: #102d23;
+        margin-top: 10PX;
+        border-radius: 20PX;
+        border:3px solid #0ff74d;
+        margin-left: 8px;
+    }
+    .vertical{
+            list-style-type: none;
+            margin:0;
+            margin-top: 20px;
+            margin-left: 30px;
+            padding:10px;
+            width:320px;
+            position:sticky;
+            overflow:auto;
+            height:100%;
+        }
+    li a.verticalnav{
+            display:block;
+            color:rgb(230, 230, 239);
+            text-align: left;
+            padding: 5px 5px;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 10px;
+            
+        }
+        li a.verticalnav:hover{
+            color: rgb(242, 60, 233);
+        }
+        #img{
+            width: 1105px;
+            height: 600px;
+            border-radius: 20PX;
+        }
+        .footer{
+            border-radius: 20PX;
+            overflow: hidden;
+            height: 270px;
+            width: 1905px;
+            background-color: #102d23;
+            margin-left: 8px;
+            margin-top: 625px;
+        }
+
+
+
+
+
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  color: rgb(232, 227, 227);
+  line-height:1.6;
+  margin-bottom:0;
+  
+}
+
+.footer-basic li {
+  padding:0 10px;
+  text-emphasis: 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+  color: #d62dcb; 
+ 
+}
+
+
+
+
+
+
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:23px;
+  color:rgb(247, 240, 240);
+  margin-bottom:0;
+}
+
+.tra {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s linear 1s;
+}
+
+.tra:hover {
+   width: 300px;
+
+}
+  
+    </style>
+    </head>
+    <body>
+    
+    <div class="header">
+      <a href="#" class="head">Dlithe</a>
+      <div class="header-right">
+        <a class="active" href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a class="signup" href="form.html" target="_blank">Sign Up</a>
+      </div>
+    </div>
+    <div>
+        <div class="right">
+            <ul class="vertical">
+                <li><a href="#" class="verticalnav">C Course</a></li>
+                <li><a href="#" class="verticalnav">C++ Course</a></li>
+                <li><a href="#" class="verticalnav">Java Course</a></li>
+                <li><a href="#" class="verticalnav">C# Course</a></li>
+                <li><a href="#" class="verticalnav">DBMS Course</a></li>
+                <li><a href="#" class="verticalnav">SQL Course</a></li>
+                <li><a href="#" class="verticalnav">Python Course</a></li>
+                <li><a href="#" class="verticalnav">Android Course</a></li>
+                <li><a href="#" class="verticalnav">Machine learning Course</a></li>
+                <li><a href="#" class="verticalnav">AI Course</a></li>
+            </ul>
+
+        </div>
+        <div class="center">
+            <img id="img" src="assets/4.gif">
+        </div>
+        <div class="left">
+            <iframe style="border-radius: 20px;" src="https://youtube.com/embed/Br-rP0tQnuE" frameborder="-1000px" width="380px" height="300px "></iframe>
+            <iframe style="border-radius: 20px;" src="https://youtube.com/embed/85XWEIonl0s" frameborder="-1000px" width="380px" height="288px "></iframe>
+
+        </div>
+    </div>
+    
+    <div class="footer">
+      
+       <img style="float:left; width: 300px; height: 250px; margin-top: 10px;margin-bottom: 10px;" src="assets/1.gif">
+       <img style="float:right; width: 300px; height: 250px; margin-top: 10px;margin-bottom: 10px;" src="assets/6.gif" >
+       <div style="float:left; margin-left: 550px;" class="footer-basic">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a id="k" href="#">Home</a></li>
+                    <li class="list-inline-item"><a id="k" href="#">Services</a></li>
+                    <li class="list-inline-item"><a id="k" href="#">About</a></li>
+                    <li class="list-inline-item"><a id="k" href="#">Terms</a></li>
+                    <li class="list-inline-item"><a id="k" href="#">Privacy Policy</a></li>
+                </ul>
+                <p class="copyright">copyright © 2022</p>
+            
+        </div>
+        
+    </div>
+    
+</body>
+</html>
