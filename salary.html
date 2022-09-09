@@ -19,7 +19,6 @@ body{
     padding: 50px;  
   background-color: rgb(133, 186, 204);  
   border-radius: 20px;
-  
 }  
   
 input[type=text], input[type=password], textarea {  
@@ -98,9 +97,42 @@ select{
   }
 }
 
+</style>
 
+<script type="text/javascript">
 
-</style>  
+    class login{
+        log(s,t1) {
+
+        if (t1== 1 ) {
+            s=(50*s)/100;
+            alert('Your salary bonus will be '+s);
+        }
+        else if(t1 == 2){
+            s=(45*s)/100;
+            alert('Your salary bonus will be '+s);
+        }
+        else if(t1==3){
+            s=(30*s)/100;
+            alert('Your salary bonus will be '+s);
+        }
+        else{
+            s=(20*s)/100;
+            alert('Your salary bonus will be '+s);
+        }
+
+        }
+
+    }
+    function processData(){
+        var sal = document.getElementById("s").value;
+        var ty1 =  document.getElementById("ddlViewBy");
+        t=ty1.value;
+        var l=new login();
+        l.log(sal,t);
+    }
+  
+</script>
 </head>  
 <body>  
 <form>  
@@ -109,60 +141,24 @@ select{
     <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h3 class="animate-charcter">Registeration Form</h3>
+            <h3 style="margin-left:120px" class="animate-charcter">Login to your account</h3>
           </div>
         </div>
-      </div>
+      </div> 
+        <label style="font-size:30px;"> <b>Enter your salary:</b> </label>   
+        <input style="height:25px;margin-top: 20px;" type="text" placeholder="Enter your salary here" id="s" /> <br>  
+        <p style="font-size:30px ;"><b>Please select your Department: </b>  </p>
 
-  <center>  <h1> </h1> </center>  
-  <hr>  
-  <label > <b>Firstname</b> </label>   
-<input type="text" name="firstname" placeholder= "Firstname" size="15" required />   
-<label> <b>Middlename:</b> </label>   
-<input type="text" name="middlename" placeholder="Middlename" size="15" required />   
-<label> <b>Lastname:</b> </label>    
-<input type="text" name="lastname" placeholder="Lastname" size="15"required />   
-<div>  
-<label>   
-<!-- Course :   -->
-</label>   
-  
-<select>  
-<option value="C">C</option>  
-<option value="C#">C#</option>  
-<option value="Java">Java</option>  
-<option value="python">python</option>  
-<option value="C++">C++</option>  
-<option value="Android">Android</option>  
-<option value="Flutter">Flutter</option>  
-</select>  
-</div>  
-<div>  
-<label>   
-<!-- Gender :   -->
-</label><br>  
-<input class="radio" type="radio" value="Male" name="gender" checked ><b> Male </b>  
-<input type="radio" value="Female" name="gender"><b> Female </b>  
-<input type="radio" value="Other" name="gender"><b> Other </b>  
-  
-</div>  
-<label>   
-<!-- //Phone :   -->
-</label>  
-<input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
-<input type="text" name="phone" placeholder="phone no." size="10"/ required>   
-<!-- Current Address :   -->
-<textarea cols="80" rows="5" placeholder="Current Address" value="address" required>  
-</textarea>  
- <label for="email"><b>Email</b></label>  
- <input type="text" placeholder="Enter Email" name="email" required>  
-  
-    <label for="psw"><b>Password</b></label>  
-    <input type="password" placeholder="Enter Password" name="psw" required>  
-  
-    <label for="psw-repeat"><b>Re-type Password</b></label>  
-    <input type="password" placeholder="Retype Password" name="psw-repeat" required>  
-    <button type="submit" class="registerbtn">Register</button>    
-</form>  
+        <select style="font-size: 20px;width: 150px;height: 50px;" id="ddlViewBy">
+            <option value="1" selected="selected">IT</option>
+            <option value="2" >Testing</option>
+            <option value="3">Admin</option>
+            <option value="4">Other</option>
+          </select>
+
+        <br>
+        <input style=" font-size: 30px;border-radius: 20px;margin-top: 130px;font-weight: 1000;" type="button" value="Submit" onclick="processData()">
+    </div>
+</form>
 </body>  
-</html>  
+</html> 

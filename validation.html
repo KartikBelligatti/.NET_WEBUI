@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+    <script type="text/javascript">
+
+        function registration() {
+
+           
+            var uname = document.getElementById("t3").value;
+            var pwd = document.getElementById("t4").value;
+
+            if (uname == 'kartik') {
+                
+                alert('Please enter your name');
+            }
+            
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Main div code -->
+    <div id="main">
+        <div class="h-tag">
+            <h2>Register Your Account</h2>
+        </div>
+        <!-- create account div -->
+        <div class="login">
+            <table cellspacing="2" align="center" cellpadding="8" border="0">
+                
+                <tr>
+                    <td align="right">Enter Username :</td>
+                    <td><input type="text" placeholder="Enter Username here" id="t3" /><span id="un"></span></td>
+                </tr>
+                <tr>
+                    <td align="right">Enter Password :</td>
+                    <td><input type="password" placeholder="Enter Password here" id="t4" /><span id="pass"></span></td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Create Account" onclick="registration()" />
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <p style="text-align:center" id="register"></p>
+        </div>
+        <!-- create account box ending here.. -->
+    </div>
+    <!-- Main div ending here... -->
+
+</body>
+
+</html>
